@@ -6,7 +6,7 @@ Northindia::Application.routes.draw do
   get "welcome/specifications"
   get "welcome/gallery"
   get "welcome/enquiry"
-
+  get "welcome/contactus1"
   get "welcome/products"
   get "welcome/aboutus1"
   get "welcome/try"
