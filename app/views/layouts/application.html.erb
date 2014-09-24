@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<title><%= content_for?(:title) ? yield(:title) : "North India Steel Tube" %></title>
+            <%= favicon_link_tag "/assets/logo.jpg" %>
+
+
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+
+  
+
+
+  </head>
+
+  <!-- <body style="background-color:#bfb6b0"> -->
+<!-- <body style="background-color:#bfb6b0"> -->
+
+ <body style="background: url(/assets/halftone.png);">
+   <div class="large-12 columns" style="background-color:none">
+      <div class="large-3 columns" style="padding-left:50px;">
+         <a href="/welcome/index"><img src="/assets/logo1.png"></a>
+      </div>
+      <div class="large-9 columns">
+         <br><br>
+         <ul class="right button-group">
+            <li><a href="/welcome/index" class="small button">Home</a></li>
+            <li><a href="#" class="small button dropdown" data-dropdown="drop2">About Us</a></li>
+            <ul id="drop2" class="f-dropdown" data-dropdown-content>
+               <li><a href="/welcome/aboutus">About NIST</a></li>
+               <li><a href="/welcome/aboutus1">Group Concerns</a></li>
+            </ul>
+            <li><a href="/welcome/products" class="small button" >Products</a></li>
+            <li><a href="/welcome/specifications" class="small button">Specifications</a></li>
+            <li><a href="/welcome/gallery" class="small button">Gallery</a></li>
+            <li><a href="#" class="small button dropdown" data-dropdown="drop3">Contact Us</a></li>
+            <ul id="drop3" class="f-dropdown" data-dropdown-content>
+               <li><a href="/welcome/contactus">Hyderabad</a></li>
+               <li><a href="/welcome/contactus#vijay">Vijayawada</a></li>
+               <li><a href="/welcome/contactus#partners">Partners</a></li>
+            </ul>
+            <li><a href="/contacts/new" class="small button">Enquiry</a></li>
+         </ul>
+      </div>
+   </div>
+   <hr>
+
+   <div class="large-12 columns">
+      <%= yield %>
+   </div>
+
+<div style="padding:4em;">
+
+</div>
+<footer>
+  <div class="large-12 columns footer">
+  <div class="container">
+<!--     <div class="medium-4 large-4 columns text-center">
+      <a href=""><img id="logo" src="/assets/footer/aerocon.png"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+      <a href=""><img id="logo" src="/assets/footer/bhushan.jpg"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/footer/jindhis.jpg"></a> 
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+      <a href=""><img id="logo" src="/assets/footer/salasar.jpg"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/footer/jindind.png"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/footer/pipes.jpeg"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/footer/saw.gif"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/footer/tt-swastik.gif"></a>
+    </div>
+    <div class="medium-4 large-4 columns text-center">
+     <a href=""> <img id="logo" src="/assets/topworth.jpg"></a>
+    </div> -->
+    <marquee ><a href=""><img id="logo" src="/assets/footer/aerocon.png"></a>
+    <a href=""><img id="logo" src="/assets/footer/bhushan.jpg"></a>
+    <a href=""><img id="logo" src="/assets/footer/jindhis.jpg"></a>
+    <a href="http:www.salasarindia.com"><img id="logo" src="/assets/footer/salasar.jpg"></a>
+    <a href=""><img id="logo" src="/assets/footer/jindind.png"></a>
+    <a href=""><img id="logo" src="/assets/footer/pipes.jpeg"></a>
+    <a href=""><img id="logo" src="/assets/footer/saw.gif"></a>
+    <a href=""><img id="logo" src="/assets/topworth.jpg"></a>
+    <a href=""><img id="logo" src="/assets/footer/tt-swastik.gif"></a></marquee>
+  </div>
+  </div>
+  <div class="large-12 columns footer_caption">
+  <br>
+    <p align="center" style="color:#5c5c5c;">© Copyright Reserved at North India Steel Tubes</p>
+  </div>
+</footer>
+
+    
+
+    
+    
+    <%= javascript_include_tag "application" %>
+ 
+
+</body>
+
+  <style type="text/css">
+  .small-3 p{
+    margin-bottom: 0;
+  }
+
+   .f-dropdown:after{
+    left:75px;
+  }
+   .f-dropdown:before{
+    left:75px;
+  }
+   
+  #logo {
+    width: 180px;
+    height: 120px;
+  }
+
+  .footer{
+    background: #085a78;
+    padding: 1em;
+
+  }
+  .footer img{
+    margin: 1em 0em;
+     border-radius:20px;
+  }
+  .footer_caption{
+    background: #333333;
+  }
+
+  .borderr{
+    border-radius:20px;
+  }
+
+  </style>
+</html>
