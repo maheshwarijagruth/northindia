@@ -9,7 +9,7 @@ Northindia::Application.routes.draw do
   get "welcome/contactus1"
   get "welcome/products"
   get "welcome/aboutus1"
-  get "welcome/try"
+  get "welcome/price"
 
   
 
