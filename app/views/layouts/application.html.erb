@@ -70,7 +70,7 @@
       <div class="large-12 columns footer">
         <div class="container">
           <marquee behavior="scroll" onmouseover="this.setAttribute('scrollamount', 4, 0);" onmouseout="this.setAttribute('scrollamount', 13,0);">
-            <a href=""><img id="logo" src="/assets/footer/jindhis.jpg"></a>
+            <a href="#" data-reveal-id="myModal"><img id="logo" src="/assets/footer/jindhis.jpg"></a>
             <a href=""><img id="logo" src="/assets/footer/zenith.png" alt="zenith birla"></a>  
             <a href=""><img id="logo" src="/assets/footer/pipes.jpeg"></a>
             <a href=""><img id="logo" src="/assets/footer/jindind.png"></a>
@@ -89,6 +89,16 @@
         <p align="center" style="color:#5c5c5c;">© Copyright Reserved at North India Steel Tubes</p>
       </div>
     </footer>
+
+
+
+    <div id="myModal" class="reveal-modal" data-reveal style="height:75em">
+        <h4>Nist Dealership Certificate</h4>
+        <iframe src="/assets/footerpdf/nistdealership.pdf" width="100%" height="80%">
+        </iframe>
+        <a class="close-reveal-modal">&#215;</a> 
+    </div>
+
     <%= javascript_include_tag "application" %>
   </body>
   <style type="text/css">
